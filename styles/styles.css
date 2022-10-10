@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header {
     align-items: center;
     height: 101px;
@@ -11,3 +12,22 @@ header {
     background: black;
     width: 100%;
 }
+
+.banner-1-desktop {
+    width: 100%;
+}
+
+.banner-1-mobile {
+    width: 100%;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner-1-desktop {
+        display: none;
+    }
+    .banner-1-mobile {
+        display: unset;
+    }
+}
+
