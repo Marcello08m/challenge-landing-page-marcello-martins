@@ -49,7 +49,7 @@ header {
 }
 
 .first-section {
-    margin-top: 73px;
+    margin-top: 74px;
     font-family: 'Inter', sans-serif;
     text-align: center;
     display: flex;
@@ -57,12 +57,27 @@ header {
     align-items: center;
 } 
 
+.image-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 74px;
+}
+
 @media screen and (max-width: 1024px) {
     .banner-1-desktop {
         display: none;
     }
     .banner-1-mobile {
         display: unset;
+    }
+    .text-1 {
+        width: 86.47%;
+    }
+    .first-section p {
+        text-align: center;
+    }
+    .image-computer {
+        width: 57.73%;
     }
 }
 
