@@ -89,21 +89,23 @@ body {
 
 .midle-card-section {
     display: flex;
-    flex-direction: row;
     background: #E0E0E0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 80px;
-    justify-content: center;
+
     align-items: center;
     gap: 40px;
 }
+
 .midle-card {
-    
+    position: relative;
+    top: 32px;
 }
 
 .midle-card-div {
-    position: relative;
-    top: 62px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
     max-width: 88.44%;
 }
 
@@ -121,15 +123,6 @@ body {
     font-size: 16px;
     line-height: 24px;
 }
-
-.midle-card-mobile-figure {
-    display: none;
-}
-
-.midle-card-div-mobile2 {
-    display: none;
-}
-
 
 @media screen and (max-width: 1024px) {
     .banner-1-desktop {
@@ -167,22 +160,23 @@ body {
         width: 57.73%;
     }
 
-    .midle-card-mobile-figure {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 14px;
+    .midle-card-section {
+        flex-direction: column;
+        padding: 0 23px;
+        gap: 24px;
     }
 
-    .midle-card-mobile {
-        background: #E0E0E0;
-    }
-    
-    .midle-card-div-mobile2 {
-        display: flex;
-    }
     .midle-card-div {
-        display: none;
+        flex-direction: row-reverse;
+        gap: 14px;
+        justify-content: center;
+    }
+
+    .midle-card-div img {
+        max-width: 54.2%;
+    }
+
+    .midle-card-section > img {
+        max-width: 100%;
     }
 }
