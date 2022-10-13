@@ -14,7 +14,6 @@ header {
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #000000;
 }
 
 .banner-1-desktop {
@@ -124,11 +123,7 @@ body {
 
 .midle-card-section img {
     flex-direction: row;
-    max-width: 50vmin;
-}
-
-.midle-card-section > img {
-    max-width: 50vmin;
+    max-width: 28.5vw;
 }
 
 .section-cards-second {
@@ -142,12 +137,16 @@ body {
 .image-card-second {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.23);
     max-width: 432px;
-    max-height: 332px;
+    min-height: 332px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 162px;
+}
+
+.image-card-second p {
+    max-width: 90%;
 }
 
 .image-card-image-second {
@@ -187,7 +186,7 @@ body {
 }
 
 .text-2-section {
-    margin-top: 118px;
+    margin-top: 108px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,6 +235,15 @@ body {
     color: #BDBDBD;
 }
 
+.section-glass-mobile {
+    display: none;
+}
+
+.section-glass-mobile img {
+    width: 100%;
+    margin-top: 98px;
+}
+
 @media screen and (max-width: 1024px) {
     .banner-1-desktop {
         display: none;
@@ -277,18 +285,20 @@ body {
     }
 
     .midle-card-div {
-        padding: 0 20px;
+        width: 100%;
         flex-direction: row-reverse;
         gap: 14px;
         justify-content: center;
     }
 
     .midle-card-div img {
-        max-width: 54.2%;
+        width: calc(50% - 7px);
+        max-width: unset;
     }
 
     .midle-card-section > img {
-        max-width: 100%;
+        width: 100%;
+        max-width: unset;
     }
 
     .section-cards-second {
@@ -300,6 +310,14 @@ body {
 
     .image-card-second {
         padding: 10px;
+    }
+
+    .image-card-image-second {
+        margin-top: 0;
+    }
+
+    .image-card-second p {
+        width: 302px;
     }
 
     .image-card-second {
@@ -314,4 +332,32 @@ body {
         padding-top: 35px;
         padding-bottom: 27px;
     }
+
+    .footer-image-section {
+        display: none;
+    }
+
+    .footer-paragraph {
+        max-width: 62.8%;
+        text-align: center;
+    }
+
+    .section-glass-mobile {
+        display: unset;
+    }
+
+    .text-2 {
+        display: flex;
+        flex-direction: column;
+        width: 84.54%;
+    }
+
+    .text-2 h2 {
+        font-size: 24px;
+    }
+
+    .text-2-section {
+        margin-top: 50px;
+    }
+
 }
