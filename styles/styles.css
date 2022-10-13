@@ -207,6 +207,35 @@ body {
     margin-top: 50px;
 }
 
+.footer-page {
+    margin-top: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000000
+}
+
+.footer-div {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div img {
+    margin: 0 8px;
+}
+
+.footer-paragraph {
+    width: 398px;
+    margin-top: 16px;
+    margin-bottom: 38px;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
 @media screen and (max-width: 1024px) {
     .banner-1-desktop {
         display: none;
@@ -234,8 +263,6 @@ body {
         max-width: 84.54%;
         margin-top: 0%;
         padding-top: 35px;
-        padding-left: 26px;
-        padding-right: 26px;
         padding-bottom: 27px;
     }
 
@@ -268,14 +295,23 @@ body {
         display: flex;
         flex-direction: column;
         margin-top: 112px;
+        padding: 0%;
+    }
+
+    .image-card-second {
+        padding: 10px;
+    }
+
+    .image-card-second {
+        max-width: 84.54%;
+        padding-top: 35px;
+        padding-bottom: 27px;
     }
 
     .image-card-second {
         max-width: 84.54%;
         margin-top: 0%;
         padding-top: 35px;
-        padding-left: 26px;
-        padding-right: 26px;
         padding-bottom: 27px;
     }
 }
